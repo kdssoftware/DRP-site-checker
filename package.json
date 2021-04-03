@@ -1,0 +1,16 @@
+{
+  "name": "drp-checker",
+  "version": "1.1.0",
+  "description": "Tests an online website if it is offline. and sends mails",
+  "main": "index.js",
+  "author": "github.com/snakehead007",
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "node-schedule": "^2.0.0",
+    "nodemailer": "^6.4.17"
+  },
+  "scripts": {
+    "start" : "node ."
+  }
+}
