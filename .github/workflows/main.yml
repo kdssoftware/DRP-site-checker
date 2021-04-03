@@ -10,6 +10,5 @@ jobs:
         with:
           image: snakehead007/drp
           registry: ghcr.io
-          dockerfile: ./Dockerfile
           username: ${{ github.repository_owner }}
           password: ${{ secrets.CR_PAT }} 
