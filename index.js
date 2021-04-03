@@ -16,7 +16,7 @@ const runJob = async ()=> {
     const isOnline = await checkIfWebsiteIsOnline(process.env.URL,process.env.TIMEOUT);
     if(isOnline===false){
         console.log("site not reachable, checking in "+process.env.WAITUNTILRECHECK+"min again");
-        await sleep(process.env.WAITUNTILRECHECK*60000);
+        await sleep(process.env.WAITUNTILRECHECK);
         const recheck = await checkIfWebsiteIsOnline(process.env.URL,process.env.TIMEOUT);
         if(recheck===false){
           counter++;
