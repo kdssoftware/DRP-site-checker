@@ -5,8 +5,7 @@ jobs:
     name: CI
     runs-on: ubuntu-latest
     steps:
-      - id: build and push container
-        uses: mr-smithers-excellent/docker-build-push@v5
+      - uses: mr-smithers-excellent/docker-build-push@v5
         with:
           image: snakehead007/drp
           registry: ghcr.io
