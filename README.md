@@ -14,6 +14,7 @@ Checks given site for availability - if not fixed after amount of times checked.
 ## How to use
 
 - Use as Docker container: 
+
      Pull the container first: `docker pull ghcr.io/snakehead007/drp`
      
     - Use with .env file:
