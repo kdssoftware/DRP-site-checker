@@ -24,19 +24,19 @@ Checks given site for availability - if not fixed after amount of times checked.
     ```bash
     #For info about a variable, check the .env.local file
     docker run --name drp -t ghcr.io/snakehead007/drp:latest /
-    --env URL="123456789.com" /
-    --env FREQUENCY="0 * * * *" /
-    --env MAXFAILURECOUNTER=24 /
-    --env ADMINEMAIL="admin@mail.com" /
-    --env EMAILLIST="employee1@company.be,employee2@company.be" /
-    --env EMAILTEXT="this is an example\DRP notification" /
-    --env EMAILSUBJECT="Site is down - notification" /
-    --env TIMEOUT=3000 /
-    --env FROMEMAIL="notification@drp.com"
-    --env WAITUNTILRECHECK=5 /
-    --env SMTPSERVER="smtp.server.com" /
-    --env SMTPPASSWORD="abc123" /
-    --env SMTPPORT=587
+    -e URL="123456789.com" /
+    -e FREQUENCY="0 * * * *" /
+    -e MAXFAILURECOUNTER=24 /
+    -e ADMINEMAIL="admin@mail.com" /
+    -e EMAILLIST="employee1@company.be,employee2@company.be" /
+    -e EMAILTEXT="this is an example\DRP notification" /
+    -e EMAILSUBJECT="Site is down - notification" /
+    -e TIMEOUT=3000 /
+    -e FROMEMAIL="notification@drp.com"
+    -e WAITUNTILRECHECK=5 /
+    -e SMTPSERVER="smtp.server.com" /
+    -e SMTPPASSWORD="abc123" /
+    -e SMTPPORT=587
     ```
 
 - From source
