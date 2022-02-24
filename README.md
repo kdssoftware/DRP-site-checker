@@ -15,18 +15,18 @@ Checks given site for availability - if not fixed after amount of times checked.
 
 - Use as Docker container: 
 
-     Pull the container first: `docker pull ghcr.io/snakehead007/drp`
+     Pull the container first: `docker pull ghcr.io/kdssoftware/drp`
      
     - Use with .env file:
 
     ```bash
     #Fill in all the .env.local fields
-    docker run --name drp -t ghcr.io/snakehead007/drp:latest --env-file ./.env.local
+    docker run --name drp -t ghcr.io/kdssoftware/drp:latest --env-file ./.env.local
     ```
     - Use with env variables:
     ```bash
     #For info about a variable, check the .env.local file
-    docker run --name drp -t ghcr.io/snakehead007/drp:latest \
+    docker run --name drp -t ghcr.io/kdssoftware/drp:latest \
     --env URL="123456789.com" \
     --env FREQUENCY="0 * * * *" \
     --env MAXFAILURECOUNTER=24 \
